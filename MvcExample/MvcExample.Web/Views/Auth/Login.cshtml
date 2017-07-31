@@ -11,6 +11,7 @@
 
     <script src="~/Scripts/jquery-3.1.1.min.js"></script>
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/controllers/authController.js"></script>
 </head>
 <body>
     <div class="container">
@@ -28,7 +29,7 @@
                     </div>
                     <a class="forgot-pass-btn" href="javascript:;" title="Şifremi Unuttum">Şifremi Unuttum</a>
                     <div class="form-group">
-                        <button type="button" class="btn btn-primary login-btn" title="Giriş Yap">Giriş Yap</button>
+                        <button type="button" class="btn btn-primary" title="Giriş Yap" onclick="authController.login()">Giriş Yap</button>
                     </div>
                 </div>
             </div>

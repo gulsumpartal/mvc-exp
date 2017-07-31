@@ -1,17 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using MvcExample.Core.Services.User;
+using MvcExample.DTO.User;
+using MvcExample.Common.Helpers;
 
 namespace MvcExample.Web.Controllers
 {
     public class AuthController : Controller
     {
-        // GET: Auth
+        
         public ViewResult Login()
         {
             return View();
+        }
+        [HttpPost]
+        public JsonResult Login(UserLoginDto dto)
+        {
+            var userData = new UserService().GetuserDetail(dto);
+
+            if (userData == null)
+                return Json("ERROR");
+
+            UserHelper.CurrentUser = userData;
+            return Json("Ok");
         }
     }
 }
