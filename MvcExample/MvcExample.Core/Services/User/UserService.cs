@@ -15,7 +15,7 @@ namespace MvcExample.Core.Services.User
         {
             var data =
                 db.Users.Where(p => p.Password.Trim() == dto.Password.Trim() 
-                                    && p.Username.Trim() == dto.Password.Trim())
+                                    && p.Username.Trim() == dto.Username.Trim())
                     .Select(p => new UserDto
                     {
                         Firstname = p.Firstname,

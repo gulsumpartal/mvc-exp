@@ -23,5 +23,11 @@ namespace MvcExample.Web.Controllers
             UserHelper.CurrentUser = userData;
             return Json("Ok");
         }
+        [HttpPost]
+        public JsonResult Logout()
+        {
+            UserHelper.CurrentUser = null;
+            return Json("OK");
+        }
     }
 }
