@@ -6,11 +6,19 @@ namespace MvcExample.Core
 {
     public class DatabaseContext :DbContext
     {
-        public DatabaseContext() :base(ConfigurationManager.ConnectionStrings["DefaultConnection"].Name)
+        #region "Constructors"
+        public DatabaseContext() : base(ConfigurationManager.ConnectionStrings["DefaultConnection"].Name)
         {
-            
+
         }
 
+        #endregion
+
+        #region "Entities"
+
         public DbSet<User> Users { get; set; }
+
+        #endregion
+
     }
 }
