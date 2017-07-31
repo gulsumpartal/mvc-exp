@@ -11,8 +11,11 @@
     <title>_Layout</title>
 </head>
 <body>
+    @{Html.RenderPartial("_Header");}
+
 <section>
     @RenderBody()
 </section>
+    @{Html.RenderPartial("_Footer");}
 </body>
 </html>
