@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Text;
 using System.Web.Mvc;
 
 namespace MvcExample.Web.Controllers
@@ -9,9 +6,10 @@ namespace MvcExample.Web.Controllers
     public class HomeController : Controller
     {
         // GET: Home
-        public ActionResult Index()
+        public ViewResult Index()
         {
             return View();
         }
+        
     }
 }
