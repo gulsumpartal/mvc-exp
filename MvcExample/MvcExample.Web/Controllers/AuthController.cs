@@ -7,7 +7,7 @@ namespace MvcExample.Web.Controllers
 {
     public class AuthController : Controller
     {
-        
+
         public ViewResult Login()
         {
             return View();
@@ -29,5 +29,14 @@ namespace MvcExample.Web.Controllers
             UserHelper.CurrentUser = null;
             return Json("OK");
         }
+        
+        [HttpGet]
+        public ActionResult Display()
+        {
+            var model = UserHelper.CurrentUser;
+            return PartialView(model);
+        }
+
+
     }
 }

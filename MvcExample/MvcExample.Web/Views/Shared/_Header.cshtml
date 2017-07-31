@@ -32,13 +32,18 @@
                                 </ul>
                             </li>
                         </asp:PlaceHolder>*@
-                    <li class="dropdown">
+                    @*<li class="dropdown">
                         <a id="dLabel2" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" class="dropdown-toggle">Haberler<span class="caret"></span></a>
                         <ul class="dropdown-menu news-app-nav" aria-labelledby="dLabel2">
                             <li id="icHaberler"><a href="/">İç Haberler</a></li>
                             <li id="teknolojiHaberleri"><a href="/">Teknoloji Haberleri</a></li>
                         </ul>
-                    </li>
+                    </li>*@
+                    <li id="btn"><a class="btn btn-default" href="javascript:;" onclick="authController.display()">haber</a></li>
+               
+                    <li id="btn"><a class="btn btn-default" href="javascript:;" onclick="authController.display()">haber2</a></li>
+                    
+
                     <li id="btnCikis"><a class="btn btn-default" href="javascript:;" onclick="authController.logout()">Çıkış Yap</a></li>
 
                 </ul>
@@ -47,3 +52,4 @@
     </nav>
 
 </header>
+

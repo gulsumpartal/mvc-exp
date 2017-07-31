@@ -19,5 +19,14 @@
                 location.href = "/Auth/Login";
             }
         });
+    },
+    display: function () {
+        $.get("/Auth/Display", function (data) {
+       
+                $('#divmodal').html(data);
+
+                $('#myModal').modal('show');
+          
+        });
     }
 }
