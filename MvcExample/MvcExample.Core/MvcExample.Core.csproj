@@ -55,6 +55,18 @@
     <Compile Include="Migrations\201707310832212_CreateDatabse.Designer.cs">
       <DependentUpon>201707310832212_CreateDatabse.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707311248152_AddDepartmentTable.cs" />
+    <Compile Include="Migrations\201707311248152_AddDepartmentTable.Designer.cs">
+      <DependentUpon>201707311248152_AddDepartmentTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707311252558_AddRoleTable.cs" />
+    <Compile Include="Migrations\201707311252558_AddRoleTable.Designer.cs">
+      <DependentUpon>201707311252558_AddRoleTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707311310465_UserTablosunaForeignkeylereklendi..cs" />
+    <Compile Include="Migrations\201707311310465_UserTablosunaForeignkeylereklendi..Designer.cs">
+      <DependentUpon>201707311310465_UserTablosunaForeignkeylereklendi..cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\User\UserService.cs" />
@@ -76,6 +88,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201707310832212_CreateDatabse.resx">
       <DependentUpon>201707310832212_CreateDatabse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707311248152_AddDepartmentTable.resx">
+      <DependentUpon>201707311248152_AddDepartmentTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707311252558_AddRoleTable.resx">
+      <DependentUpon>201707311252558_AddRoleTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707311310465_UserTablosunaForeignkeylereklendi..resx">
+      <DependentUpon>201707311310465_UserTablosunaForeignkeylereklendi..cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

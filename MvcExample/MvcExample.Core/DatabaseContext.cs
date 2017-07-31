@@ -1,5 +1,7 @@
 ﻿using System.Data.Entity;
 using System.Configuration;
+using MvcExample.Domain.Department;
+using MvcExample.Domain.Role;
 using MvcExample.Domain.User;
 
 namespace MvcExample.Core
@@ -17,6 +19,8 @@ namespace MvcExample.Core
         #region "Entities"
 
         public DbSet<User> Users { get; set; }
+        public DbSet<Department> Departments { get; set; }
+        public DbSet<Role> Roles { get; set; }
 
         #endregion
 
