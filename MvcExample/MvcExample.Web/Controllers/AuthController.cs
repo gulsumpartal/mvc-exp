@@ -30,13 +30,6 @@ namespace MvcExample.Web.Controllers
             return Json("OK");
         }
         
-        [HttpGet]
-        public ActionResult Display()
-        {
-            var model = UserHelper.CurrentUser;
-            return PartialView(model);
-        }
-
 
     }
 }
