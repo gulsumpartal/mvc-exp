@@ -1,0 +1,9 @@
+﻿@model List<MvcExample.DTO.News.NewsDto>
+<div>
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>@item.Content    @item.Name</li>
+        }
+    </ul>
+</div>
