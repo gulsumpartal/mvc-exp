@@ -17,5 +17,10 @@ namespace MvcExample.Web.Controllers
         {
             return PartialView("Display");
         }
+        [HttpPost]
+        public PartialViewResult AddNewsModalDisplay()
+        {
+            return PartialView("_AddNewsPartial");
+        }
     }
 }
